@@ -9,7 +9,13 @@ fastify.get('/', async (request, reply) => {
 // Run the server!
 const start = async () => {
   try {
-    await fastify.listen(18082)
+    await fastify.listen(process.env.PORT || 18082, '0.0.0.0', function (err, address) {
+	if (err) {
+		fastify.log.error(err)
+		process.exit(1)
+	}
+	fastify.log.info(`server listening on ${address}`)
+});
   } catch (err) {
     fastify.log.error(err)
     process.exit(1)
