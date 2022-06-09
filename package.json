@@ -1,0 +1,12 @@
+{
+  "name": "nbo.eqlstore.com",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/eqlstorecom/nbo.eqlstore.com.git",
+  "author": "EQL.DEV.Team",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "fastify-cors": "^6.1.0"
+  }
+}
