@@ -2,10 +2,10 @@
 	"name": "nbo.eqlstore.com",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev --port 8082",
+		"dev": "svelte-kit dev --port 18082",
 		"build": "svelte-kit build",
 		"package": "svelte-kit package",
-		"preview": "svelte-kit preview --port 8082",
+		"preview": "svelte-kit preview --port 18082",
 		"prepare": "svelte-kit sync",
 		"test": "playwright test",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
