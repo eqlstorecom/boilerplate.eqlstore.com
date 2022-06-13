@@ -92,7 +92,7 @@ import rate_limit from '@fastify/rate-limit';
 				app.log.error(err);
 				process.exit(1);
 			}
-			app.log.info(`server listening on ${address}`);
+			// app.log.info(`server listening on ${address}`);
 		});
 
 		// await app.listen(
