@@ -8,7 +8,6 @@ module.exports = {
 		'import/no-mutable-exports': 0,
 		'no-labels': 0,
 		'no-restricted-syntax': 0,
-		indent: 'off',
 	},
 	extends: [
 		'airbnb-typescript',
