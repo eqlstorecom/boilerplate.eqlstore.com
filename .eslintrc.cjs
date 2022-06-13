@@ -5,9 +5,6 @@ module.exports = {
 		'react/jsx-filename-extension': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'import/extensions': 'off',
-		'import/no-mutable-exports': 0,
-		'no-labels': 0,
-		'no-restricted-syntax': 0,
 	},
 	extends: [
 		'airbnb-typescript',
