@@ -86,7 +86,7 @@ import rate_limit from '@fastify/rate-limit';
 			(req, res) => handler(req.raw, res.raw, () => {}),
 		);
 
-		app.listen({ port: 18082 }, '0.0.0.0', (err, address) => {
+		app.listen({ port: 18082, host: '0.0.0.0' }, (err, address) => {
 			if (err) {
 				app.log.error(err);
 				process.exit(1);
