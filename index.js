@@ -25,7 +25,7 @@ import rate_limit from '@fastify/rate-limit';
 		//rate limit
 		await app.register(rate_limit, {
 			cache: 10000,
-			allowList: ['127.0.0.1', 'localhost'],
+			allowList: [],
 			keyGenerator: req =>
 				req.headers['x-real-ip'] ||
 				req.headers['x-client-ip'] ||
