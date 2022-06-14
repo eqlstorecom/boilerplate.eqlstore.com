@@ -12,7 +12,7 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
 		"format": "prettier --write --plugin-search-dir=. .",
-		"serve:local": "pm2-dev start index.js",
+		"serve:local": "pnpm install && pnpm build && pm2-dev start index.js",
 		"serve:dev": "pnpm install && pnpm build && pm2 restart all",
 		"smui-theme": "smui-theme compile static/smui.css -i src/theme -i ./node_modules"
 	},
