@@ -59,7 +59,6 @@ import rate_limit from '@fastify/rate-limit';
 			(req, res) => handler(req.raw, res.raw, () => {}),
 		);
 
-
 		app.all(
 			'/*',
 			{
