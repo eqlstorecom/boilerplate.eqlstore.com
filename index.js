@@ -65,7 +65,7 @@ import rate_limit from '@fastify/rate-limit';
 				config: {
 					rateLimit: {
 						max: async (req, key) => {
-							console.log('req.url', req.url.startsWith('/api/'));
+							// console.log('req.url', req.url.startsWith('/api/'));
 							if (req.url.startsWith('/api/')) {
 								return 500;
 							} else {
